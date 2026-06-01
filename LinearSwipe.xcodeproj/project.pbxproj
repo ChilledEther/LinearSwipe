@@ -19,13 +19,13 @@
 
 /* Begin PBXFileReference section */
 		588922D329BB490400F7F843 /* AppSwitcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSwitcher.swift; sourceTree = "<group>"; };
-		58BC5B1528B3C37B0013EAD3 /* Touch-Tab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Touch-Tab.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58BC5B1528B3C37B0013EAD3 /* LinearSwipe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LinearSwipe.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		58BC5B2828B3C4C30013EAD3 /* SwipeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeManager.swift; sourceTree = "<group>"; };
 		58BC5B2928B3C4C30013EAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58BC5B2A28B3C4C30013EAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58BC5B2B28B3C4C30013EAD3 /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		58D3F9F32A8E14C80021A532 /* PrivacyHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyHelper.swift; sourceTree = "<group>"; };
-		58D3F9F52A8E15E50021A532 /* Touch-Tab.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Touch-Tab.entitlements"; sourceTree = "<group>"; };
+		58D3F9F52A8E15E50021A532 /* LinearSwipe.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "LinearSwipe.entitlements"; sourceTree = "<group>"; };
 		58DE49C929D09BB70025BE44 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		58FBBBE429D20D3600A15F66 /* BundleInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -34,7 +34,7 @@
 		58BC5B0C28B3C37B0013EAD3 = {
 			isa = PBXGroup;
 			children = (
-				58BC5B1728B3C37B0013EAD3 /* Touch-Tab */,
+				58BC5B1728B3C37B0013EAD3 /* LinearSwipe */,
 				58BC5B1628B3C37B0013EAD3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -42,15 +42,15 @@
 		58BC5B1628B3C37B0013EAD3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				58BC5B1528B3C37B0013EAD3 /* Touch-Tab.app */,
+				58BC5B1528B3C37B0013EAD3 /* LinearSwipe.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		58BC5B1728B3C37B0013EAD3 /* Touch-Tab */ = {
+		58BC5B1728B3C37B0013EAD3 /* LinearSwipe */ = {
 			isa = PBXGroup;
 			children = (
-				58D3F9F52A8E15E50021A532 /* Touch-Tab.entitlements */,
+				58D3F9F52A8E15E50021A532 /* LinearSwipe.entitlements */,
 				58FBBBE429D20D3600A15F66 /* BundleInfo.swift */,
 				58BC5B2A28B3C4C30013EAD3 /* AppDelegate.swift */,
 				58BC5B2928B3C4C30013EAD3 /* Assets.xcassets */,
@@ -60,15 +60,15 @@
 				58DE49C929D09BB70025BE44 /* AboutView.swift */,
 				58D3F9F32A8E14C80021A532 /* PrivacyHelper.swift */,
 			);
-			path = "Touch-Tab";
+			path = "LinearSwipe";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		58BC5B1428B3C37B0013EAD3 /* Touch-Tab */ = {
+		58BC5B1428B3C37B0013EAD3 /* LinearSwipe */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 58BC5B2428B3C37E0013EAD3 /* Build configuration list for PBXNativeTarget "Touch-Tab" */;
+			buildConfigurationList = 58BC5B2428B3C37E0013EAD3 /* Build configuration list for PBXNativeTarget "LinearSwipe" */;
 			buildPhases = (
 				58BC5B1128B3C37B0013EAD3 /* Sources */,
 				58BC5B1328B3C37B0013EAD3 /* Resources */,
@@ -77,9 +77,9 @@
 			);
 			dependencies = (
 			);
-			name = "Touch-Tab";
-			productName = "Touch-Tab";
-			productReference = 58BC5B1528B3C37B0013EAD3 /* Touch-Tab.app */;
+			name = "LinearSwipe";
+			productName = "LinearSwipe";
+			productReference = 58BC5B1528B3C37B0013EAD3 /* LinearSwipe.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 58BC5B1028B3C37B0013EAD3 /* Build configuration list for PBXProject "Touch-Tab" */;
+			buildConfigurationList = 58BC5B1028B3C37B0013EAD3 /* Build configuration list for PBXProject "LinearSwipe" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -111,7 +111,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				58BC5B1428B3C37B0013EAD3 /* Touch-Tab */,
+				58BC5B1428B3C37B0013EAD3 /* LinearSwipe */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Touch-Tab/Touch-Tab.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "LinearSwipe/LinearSwipe.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -272,7 +272,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Touch-Tab";
+				INFOPLIST_KEY_CFBundleDisplayName = "LinearSwipe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© Ilya Rodionov";
@@ -280,8 +280,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ris58h.Touch-Tab";
+				MARKETING_VERSION = 1.5.0; // x-release-please-version
+				PRODUCT_BUNDLE_IDENTIFIER = "ris58h.LinearSwipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -294,7 +294,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = "Touch-Tab/Touch-Tab.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "LinearSwipe/LinearSwipe.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -303,7 +303,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Touch-Tab";
+				INFOPLIST_KEY_CFBundleDisplayName = "LinearSwipe";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
 				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "© Ilya Rodionov";
@@ -311,8 +311,8 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.5.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ris58h.Touch-Tab";
+				MARKETING_VERSION = 1.5.0; // x-release-please-version
+				PRODUCT_BUNDLE_IDENTIFIER = "ris58h.LinearSwipe";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -322,7 +322,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		58BC5B1028B3C37B0013EAD3 /* Build configuration list for PBXProject "Touch-Tab" */ = {
+		58BC5B1028B3C37B0013EAD3 /* Build configuration list for PBXProject "LinearSwipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58BC5B2228B3C37E0013EAD3 /* Debug */,
@@ -331,7 +331,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		58BC5B2428B3C37E0013EAD3 /* Build configuration list for PBXNativeTarget "Touch-Tab" */ = {
+		58BC5B2428B3C37E0013EAD3 /* Build configuration list for PBXNativeTarget "LinearSwipe" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				58BC5B2528B3C37E0013EAD3 /* Debug */,

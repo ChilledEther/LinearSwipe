@@ -1,0 +1,49 @@
+name: release
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    runs-on: macos-latest
+    steps:
+      - name: run-release-please
+        uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          release-type: simple
+
+      - name: checkout-repository
+        if: ${{ steps.release.outputs.release_created }}
+        uses: actions/checkout@v4
+
+      - name: build-app
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          xcodebuild -project LinearSwipe.xcodeproj -scheme LinearSwipe -configuration Release -derivedDataPath Build/
+
+      - name: package-app
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          APP_PATH=$(find Build -name "LinearSwipe.app" -type d | head -n 1)
+          if [ -z "$APP_PATH" ]; then
+            echo "Error: LinearSwipe.app not found"
+            exit 1
+          fi
+          APP_DIR=$(dirname "$APP_PATH")
+          APP_NAME=$(basename "$APP_PATH")
+          cd "$APP_DIR"
+          zip -r "${GITHUB_WORKSPACE}/LinearSwipe.zip" "$APP_NAME"
+
+      - name: upload-release-asset
+        if: ${{ steps.release.outputs.release_created }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload ${{ steps.release.outputs.tag_name }} "${GITHUB_WORKSPACE}/LinearSwipe.zip"
