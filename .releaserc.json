@@ -12,7 +12,8 @@
     [
       "@semantic-release/exec",
       {
-        "prepareCmd": "bash scripts/build.sh ${nextRelease.version}"
+        "prepareCmd": "bash scripts/build.sh ${nextRelease.version}",
+        "publishCmd": "bash scripts/update-cask.sh ${nextRelease.version}"
       }
     ],
     [

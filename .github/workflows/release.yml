@@ -24,6 +24,18 @@ jobs:
         with:
           node-version: 20
 
+      - name: generate-token
+        uses: actions/create-github-app-token@v3
+        id: app-token
+        env:
+          APP_ID_VAL: ${{ secrets.APP_ID }}
+          APP_KEY_VAL: ${{ secrets.APP_PRIVATE_KEY }}
+        if: env.APP_ID_VAL != '' && env.APP_KEY_VAL != ''
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          repositories: "LinearSwipe, homebrew-tap"
+
       - name: install-dependencies
         run: |
           npm install --no-save semantic-release @semantic-release/changelog @semantic-release/git @semantic-release/exec
@@ -31,5 +43,6 @@ jobs:
       - name: run-semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          HOMEBREW_TAP_TOKEN: ${{ steps.app-token.outputs.token || secrets.HOMEBREW_TAP_TOKEN }}
         run: |
           npx semantic-release
